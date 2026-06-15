@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Repaso JS1 – HASSAN ADRAOU</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Repaso JS1 – HASSAN ADRAOU</h1>
+
+<!-- EJERCICIO 1 -->
+<section>
+    <h2>1. Alternar mayúsculas y minúsculas</h2>
+
+    <input type="text" id="frase" placeholder="Escribe una frase">
+    <br><br>
+
+    <label>
+        <input type="checkbox" id="ignorarEspacios">
+        No contar espacios como carácter
+    </label>
+    <br><br>
+
+    <button onclick="alternar()">Transformar</button>
+
+    <div id="resultado1" class="resultado"></div>
+</section>
+
+<!-- EJERCICIO 2 -->
+<section>
+    <h2>2. Cálculo de IMC y peso ideal</h2>
+
+    Altura (m): <input type="number" id="altura" step="0.01"><br><br>
+    Peso (kg): <input type="number" id="peso" step="0.1"><br><br>
+
+    Sexo:
+    <label><input type="radio" name="sexo" value="mujer" checked> Mujer</label>
+    <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+    <br><br>
+
+    <button onclick="calcularIMC()">Calcular IMC</button>
+
+    <div id="resultado2" class="resultado"></div>
+</section>
+
+<!-- EJERCICIO 3 -->
+<section>
+    <h2>3. Frases de saludo iterativas</h2>
+
+    <button onclick="generarSaludos()">Generar saludos</button>
+
+    <div id="resultado3" class="resultado"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

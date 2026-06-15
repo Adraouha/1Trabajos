@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day4-objetos</title>
+</head>
+<body>
+    <h1>Objetos en JavaScript</h1>
+
+    <div id="resultado"></div>
+
+<script>
+const galletas = {
+    marca: "Artiach",
+    nombre: "Chiquilín",
+    descripcion: "galletas de mantequilla",
+    precio: 2.75,
+    hayExistencias: true
+};
+
+galletas.oferta = true;
+galletas.descripcion = "galletas de mantequilla con chocolate";
+delete galletas.hayExistencias;
+
+const propiedades = Object.keys(galletas);
+const valores = Object.values(galletas);
+
+let tablaHTML = '<table border="1" cellpadding="10">';
+tablaHTML += '<tr>';
+
+// Primera fila: propiedades
+for (let prop of propiedades) {
+    tablaHTML += `<td><strong>${prop}</strong></td>`;
+}
+
+tablaHTML += '</tr><tr>';
+
+// Segunda fila: valores
+for (let valor of valores) {
+    tablaHTML += `<td>${valor}</td>`;
+}
+
+tablaHTML += '</tr></table>';
+
+document.getElementById("resultado").innerHTML = tablaHTML;
+</script>
+
+    <script src="day4-objetos.js">
+
+    </script>
+</body>
+</html>

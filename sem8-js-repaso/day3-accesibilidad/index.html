@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Accesible</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Ejemplo de página web accesible con skip-link, imágenes descriptivas y navegación clara">
+    </head>
+<body>
+
+    <!-- Enlace oculto para saltar navegación: visible al recibir foco -->
+    <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+    <header role="banner">
+        <div class="header-inner">
+            <h1>Mi Página Accesible</h1>
+
+            <nav role="navigation" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#contenido">Ir al contenido</a></li>
+                    <li><a href="#imagenes">Ir a imágenes</a></li>
+                    <li><a href="#final">Ir al final</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido" role="main">
+        <h2>Contenido principal</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+        </p>
+
+        <section id="imagenes" aria-labelledby="galeria-title">
+            <h3 id="galeria-title">Galería de imágenes</h3>
+
+            <figure>
+                <img src="montana.jpg" alt="Montañas nevadas bajo un cielo azul despejado" />
+                <figcaption>Montañas nevadas al amanecer. Fotografía de paisaje natural.</figcaption>
+            </figure>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae velit nec ipsum tincidunt
+                fermentum. Integer ac arcu nec lorem cursus volutpat.
+            </p>
+
+            <figure>
+                <img src="playa.jpg" alt="Playa de arena blanca con palmeras junto al mar" />
+                <figcaption>Playa tropical con aguas cristalinas y palmeras.</figcaption>
+            </figure>
+
+        </section>
+
+        <p>
+            Suspendisse potenti. Cras sit amet nibh eu mi fermentum tempor. Donec vel magna at nunc faucibus luctus.
+        </p>
+
+        <section id="final">
+            <h3>Final de la página</h3>
+            <p>Gracias por visitar esta página de ejemplo accesible.</p>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p>Contacto: ejemplo@dominio.com</p>
+    </footer>
+
+</body>
+</html>

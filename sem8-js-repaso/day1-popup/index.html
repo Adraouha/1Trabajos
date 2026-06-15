@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1: Popup y Animaciones</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+
+    <main class="container">
+        <button id="abrir" aria-controls="popup">Mostrar anuncio</button>
+    </main>
+
+    <!-- Overlay para el popup -->
+    <div id="overlay" class="overlay" aria-hidden="true"></div>
+
+    <div id="popup" class="popup" role="dialog" aria-modal="true" aria-hidden="true">
+        <button id="cerrar" class="close" aria-label="Cerrar anuncio">✕</button>
+        <h2>¡Oferta especial!</h2>
+        <p>50% de descuento hoy — solo por tiempo limitado.</p>
+    </div>
+
+    <section class="cajas-container">
+        <div class="controls">
+            <button id="palanca">Palanca</button>
+            <button id="stop">STOP</button>
+        </div>
+
+        <div class="cajas">
+            <div class="caja" data-index="0">Caja 1</div>
+            <div class="caja" data-index="1">Caja 2</div>
+            <div class="caja" data-index="2">Caja 3</div>
+        </div>
+    </section>
+
+    <section class="semaforo" aria-label="Semáforo">
+        <div class="luz red" data-color="red"></div>
+        <div class="luz yellow" data-color="yellow"></div>
+        <div class="luz green" data-color="green"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
